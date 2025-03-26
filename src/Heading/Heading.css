@@ -1,0 +1,22 @@
+.container-fluid {
+    background-color: whitesmoke;
+   margin: 0px !important;
+    width: vh(100%);
+    
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.headBtn{
+    align-items: center !important;
+    display: flex;
+    justify-content: flex-end;
+}
+.headBtn button{
+    width: 40%;
+    height: 4rem;
+
+}
