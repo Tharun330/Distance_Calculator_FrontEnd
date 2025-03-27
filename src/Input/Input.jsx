@@ -24,7 +24,6 @@ function Input() {
     const [radiodisable, setRadioDisable] = useState(false);
 
 
-
     let changeHandle = (inputIdentifier, newValue) => {
 
         setValues(prevUserInput => {
@@ -47,6 +46,9 @@ function Input() {
             }
             if (!values.destinationAddress) {
                 console.log("Destination address required");
+                setError(true);
+            }
+            if (!values.miles && !values.kilometers && !values.both) {
                 setError(true);
             }
 
@@ -98,7 +100,7 @@ function Input() {
                     <div className='inputDiv'>
                         <label htmlFor='input' className='text-muted '>Source Address</label>
                         <input className='input' id='input' type='text' value={values.sourceAddress} onChange={(event) => changeHandle('sourceAddress', event.target.value)} placeholder='Input address' required />
-                        {error ? <p>Both Address required!</p> : ''}
+                        {error ? <p>Please fill all neccessary inputs!</p> : ''}
                     </div>
 
                     <div className='inputDiv ms-5'>
