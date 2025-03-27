@@ -12,7 +12,7 @@
 
 }
 
-.mainContainer {
+.mainContainerCalculator {
     display: flex;
     flex-direction: column;
 }
@@ -64,7 +64,7 @@
 }
 
 .resultbox {
-    margin: 0px 4rem;
+    margin-left: 30px;
 }
 
 .bothdistance {
@@ -79,6 +79,7 @@
 .btncontainer{
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     
 }
 
