@@ -1,0 +1,12 @@
+.container{
+    padding: 1rem;
+    width: max-content;
+}
+
+.calculatorcontainer{
+    padding: 2rem 0px !important;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+

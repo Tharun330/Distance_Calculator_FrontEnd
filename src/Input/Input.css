@@ -1,0 +1,95 @@
+.input {
+
+    height: 3rem;
+    width: 25rem;
+    background-color: rgb(239, 237, 237);
+    /* margin: .5rem .5rem .5rem 1rem; */
+
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #242424 !important;
+
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4rem;
+}
+
+.inputDiv {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.radiocontainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+}
+
+.radiolabel {
+    margin-left: .5rem;
+}
+
+
+.submitbtn {
+    height: 2.5rem;
+    padding: 5px 20px;
+    background-color: rgb(184, 184, 184);
+    border: none;
+    color: rgba(85, 83, 75, 0.622);
+
+}
+
+.submitbtn:hover {
+    background-color: lightgrey !important;
+}
+
+.submitbtn:active {
+    background-color: red !important;
+    color: white;
+}
+
+.submitbtn:focus {
+    background-color: red !important;
+    color: white;
+}
+
+.resultbox {
+    margin: 0px 4rem;
+}
+
+.bothdistance {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    
+}
+.mi-para {
+    margin-left: 20px;
+}
+.btncontainer{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.resetbtn{
+    height: 2.5rem;
+    padding: 5px 20px;
+    border: none;
+    color: rgba(85, 83, 75, 0.622);
+    background-color: rgb(127, 64, 64);
+    color: white;
+    margin-left: 1rem;
+
+
+}
