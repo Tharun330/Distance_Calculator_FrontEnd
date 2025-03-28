@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Heading.css';
 import { Link } from 'react-router-dom';
 function Heading() {
-
+    //State to change content in button which is present in Heading 
     const [changeBtn, setChangeBtn] = useState(true);
 
     let handleClick = () => {
@@ -25,6 +25,7 @@ function Heading() {
 
                 <div className='col-6 headBtn'>
 
+                    {/* Logic for changing content in Button, according to which page is showing */}
                     {changeBtn ? (<Link to='/history'>
                         <button className='btn btn-dark historybtn' onClick={handleClick}>View Historical Queries<span className='ms-4 '><i class="fa-solid fa-clock-rotate-left"></i></span></button>
                     </Link>) :

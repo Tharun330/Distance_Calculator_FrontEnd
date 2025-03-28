@@ -4,8 +4,9 @@ import { useState, useEffect } from "react";
 import './History.css'
 
 function HistoryPage() {
-
+    //State to store the data coming from backend via GET route
     const [allHistory, setAllHistory] = useState([]);
+    //State to display error msg if Backend API fails to retrieve data
     const [displayError, setDisplayError] = useState(false);
 
     useEffect(() => {
@@ -24,7 +25,6 @@ function HistoryPage() {
 
             </div>
 
-
             <table className='history-table'>
                 <thead>
                     <tr>
@@ -33,7 +33,6 @@ function HistoryPage() {
                         <th>Distance in Miles</th>
                         <th>Distance in Kilometers</th>
                     </tr>
-
                 </thead>
                 <tbody>
 

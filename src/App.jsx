@@ -9,6 +9,8 @@ import HistoryPage from './History/HistoryPage'
 
 function App() {
 
+  //This State is to set state of Error component in Input component using Context implementation.
+  //Passing state through all routes using ErrorContext.Provider down below 
   const [display, setDisplay] = useState(false);
   
 
