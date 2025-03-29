@@ -11,4 +11,9 @@ export default defineConfig({
       usePolling: true,
     },
   },
+  test:{
+    environment: 'happy-dom',
+    setupFiles: ['./src/tests/setup.js'],
+    include: ['src/**/*.{test,spec}.{js,jsx}']
+  }
 });

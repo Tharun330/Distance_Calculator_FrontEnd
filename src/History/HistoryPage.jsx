@@ -18,14 +18,14 @@ function HistoryPage() {
     }, []);
 
     return (
-        <div className='mainContainer'>
+        <div data-testid="History" className='mainContainer'>
             <div className='historyHeading'>
                 <p className='mainHead'>History Queries</p>
                 <p className='headCaption'>History of the user's queries.</p>
 
             </div>
 
-            <table className='history-table'>
+            <table data-testid="data-table" className='history-table'>
                 <thead>
                     <tr>
                         <th>Source Address</th>
@@ -39,7 +39,7 @@ function HistoryPage() {
                     {allHistory.map((data) => {
 
                         return (
-                            <tr key={data._id} >
+                            <tr key={data._id}  data-testid="data-row">
                                 <td>{data.sourceAddress}</td>
                                 <td>{data.destinationAddress}</td>
                                 <td>{data.distanceInMiles}</td>
